@@ -1,0 +1,316 @@
+@charset "euc-kr";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+body {
+	background:url('../../images/2020/common/top_bg.png') repeat-x;
+}
+.container{
+	width:1200px;
+	margin:0 auto;
+}
+/* 상단 영역 */
+#header {
+	height:141px;
+}
+#header * {font-family: 'NanumSquare', sans-serif !important;}
+#header h1 {
+	position:absolute;
+	left:0;
+	top:78px;
+}
+#gnb {
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+#gnb .selectBox {
+	background:url('../../images/2020/common/select_arr.png') right center no-repeat;
+	width:116px;
+	height:40px;
+	margin-left:2px;
+	cursor:pointer
+}
+#gnb .selectBox ul{
+	border:#dddddd solid 1px;
+	border-bottom:none;
+	height:0;
+	overflow:hidden;
+	z-index:9;
+	position:absolute;
+	width:127px;
+	right:30px;
+}
+#gnb .selectBox ul.sel{
+	height:auto;
+}
+#gnb .selectBox p {
+	font-size:14px;
+	color:#555555;
+	font-weight:bold;
+	line-height:40px;
+}
+#gnb > li:last-child{
+	padding:11px 0 0 10px
+}
+#gnb .selectBox ul > li {
+	border-bottom:#dddddd solid 1px;
+	padding:0 10px;
+	line-height:30px;
+	font-size:14px;
+	color:#555555;
+	font-weight:bold;
+	background:#fff
+}
+#gnb .searchBox {
+	background:url('../../2015/images/common/search_bg.png') no-repeat;
+	width:157px;
+	height:28px;
+	text-align:center;
+	padding:9px 0 0 10px;
+	margin-left:5px;
+}
+#gnb .searchBox input[type='text']{
+	border:none;
+	width:115px;
+}
+#gnb .searchBox *{
+	float:left
+}
+#topMenu {
+	float:right;
+	margin-top:70px;
+}
+#topMenu > li > a{
+	font-size:18px;
+	display:block;
+	padding:12px 0 3px;
+	margin:0 35px;
+	font-weight:bold;
+	color:#000000
+}
+#topMenu > li > a:hover, #topMenu > li.on > a{
+	border-bottom:#333333 solid 2px;
+}
+#topMenu li div {
+	display:none;
+	z-index:9999;
+	left:0px;
+	top:163px;
+	position:absolute;
+}
+#topMenu li div p{
+	float:left;
+	margin-top:35px;
+	width:300px;
+	text-align:center;
+}
+#topMenu li div p span{
+	font-size:30px;
+	font-weight:bold;
+	position:relative;
+	display:inline-block;
+}
+#topMenu li div p span:after{
+	position:absolute;
+	left:2px;
+	top:-14px;
+	content:'';
+	display:block;
+	width:45px;
+	height:3px;
+}
+#topMenu li div ul{
+	float:left;
+	width:810px;
+	margin-left:25px;
+}
+#topMenu li div ul li{
+	float:left;
+}
+#topMenu li ul li a{
+	display:block;
+	color:#fff;
+	font-size:14px;
+	width:150px;
+	line-height:35px;
+	margin:5px;
+	text-align:center
+}
+#topMenu li:nth-child(1) ul li a, 
+#topMenu li:nth-child(1) div p span:after{background:#2856b6;}
+#topMenu li:nth-child(2) ul li a, 
+#topMenu li:nth-child(2) div p span:after{background:#009c7c;}
+#topMenu li:nth-child(3) ul li a, 
+#topMenu li:nth-child(3) div p span:after{background:#fac81b;}
+#topMenu li:nth-child(4) ul li a, 
+#topMenu li:nth-child(4) div p span:after{background:#d4138d;}
+#topMenu li:nth-child(5) ul li a, 
+#topMenu li:nth-child(5) div p span:after{background:#9aaf4f;}
+#topMenu li:nth-child(1) div p span {color:#2856b6}
+#topMenu li:nth-child(2) div p span {color:#009c7c}
+#topMenu li:nth-child(3) div p span {color:#fac81b}
+#topMenu li:nth-child(4) div p span {color:#d4138d}
+#topMenu li:nth-child(5) div p span {color:#9aaf4f}
+
+#topMenu li ul li a:hover, #topMenu li ul li.on a{
+	
+}
+#header .topMenuBg{
+	background:#fff;
+	width:100%;
+	height:130px;
+	display:none;
+	z-index:9;
+	left:0px;
+	position:absolute;
+	top:141px;
+}
+#header .topMenuBg div{
+	margin:0 auto;
+	background:url('../../images/2020/common/top_over.png') no-repeat;
+	width:1200px;
+	height:130px;
+}
+#subCont {
+	background:url('../../images/2020/common/left_bg.png') repeat-y;
+}
+/* 좌측 메뉴 */
+#left {
+	width:210px;
+	float:left;
+}
+#left h2 {
+	background:#00529c;
+	color:#fff;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	padding:40px 0;
+	min-height:100px;
+	line-height:32px;
+	word-break:keep-all;
+	box-sizing:border-box
+}
+#left > ul > li {
+	border-bottom:#dadada solid 1px;
+}
+#left > ul > li > a{
+	display:block;
+	color:#333;
+	padding:15px 25px 15px 18px;
+	font-size:15px;
+	background:url('../../images/2020/common/left_arr.png') 189px 22px no-repeat;
+}
+#left > ul > li.on > a, #left > ul > li > a:hover{
+	background:url('../../images/2020/common/left_arr_on.png') 189px 22px no-repeat #666666;
+	color:#fff
+}
+#left > ul > li > ul {display:none}
+#left > ul > li.on > ul {
+	display:block;
+	background:#fafafa;
+	padding:15px 0;
+	margin:0 1px
+}
+#left > ul > li > ul > li > a:hover, #left > ul > li > ul > li.on a{
+	color:#0f8ffe;
+	background:url('../../images/2020/common/left_bar_on.png') 19px 14px no-repeat;
+}
+#left > ul > li > ul > li > a {
+	background:url('../../images/2020/common/left_bar.png') 19px 14px no-repeat;
+	padding:5px 10px 5px 28px;
+	color:#999999;
+	font-size:15px;
+	display:block;
+}
+/* 컨텐츠 영역 */
+#contents {
+	width:940px;
+	float:right;
+}
+#contents .h3 {
+	background:url('../../images/2020/common/h3_bg.png') 0 bottom repeat-x;
+	padding:50px 0 17px;
+	line-height:33px;
+	font-size:30px;
+	color:#222222;
+}
+.contesntI {
+	padding:15px 0px 100px 0px;
+}
+.location {
+	text-align:right;
+	padding-right:0px;
+	color:#666666;
+	height:75px;
+	margin-top:-50px;
+}
+.location span {
+	color:#666666 !important;
+	font-size:12px;
+}
+.location span:first-child{
+	background:url('../../images/2020/common/icon_home.png') no-repeat;
+	width:13px;
+	height:12px;
+	display:inline-block;
+	font-size:0;
+}
+.location strong {
+	font-weight:normal
+}
+#contents h3{
+	font-size:32px;
+	line-height:32px;
+	background:url('../../2015/images/common/h3.png') no-repeat;
+	padding:25px 0 0 0px;
+	height:58px;
+}
+/* footer */
+#footer {
+	clear:both;
+	border-top:#c1c1c1 solid 1px;
+	background:#f1f1f1;
+	height:109px;
+}
+#footer .fLogo{
+	position:absolute;
+	left:0px;
+	top:30px;
+}
+#footer .fList{
+	position:absolute;
+	left:267px;
+	top:17px;
+}
+#footer .fList li {
+	float:left;
+	background:url('../../2015/images/common/fBar.png') 0 4px no-repeat;
+	padding:0 5px;
+}
+#footer .fList li:first-child {
+	background-image:none
+}
+#footer .fList li a{
+	color:#333333;
+	font-size:14px;
+	font-weight:bold
+}
+#footer .fAddr{
+	position:absolute;
+	left:272px;
+	top:50px;
+	color:#666666;
+	font-size:14px;
+	line-height:20px;
+}
+#footer .fAddr strong{
+	color:#5b88a4;
+	font-family:"Nanum Gothic";
+}
+/* Top 버튼 */
+#top {
+	position:fixed;
+	left:50%;
+	top:143px;
+	margin-left:485px
+}

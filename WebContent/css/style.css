@@ -1,0 +1,291 @@
+@charset "euc-kr";
+@import url('/visitgoyang/2015/css/common.css');
+@import url('/visitgoyang/css/2020/layout.css');
+/* 메인페이지 */
+.mainVisual {position:relative}
+.bxslider li {
+	width:100%;
+	height:760px;
+}
+.quick {
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:url('/visitgoyang/images/2020/main/quick_bg.png');
+	height:180px;
+	width:100%
+}
+.quick ul{
+	width:1200px;
+	margin:0 auto;
+}
+.quick ul li{
+	float:left;
+	width:20%;
+	background:url('/visitgoyang/images/2020/main/quick_line.png') right 40px no-repeat;
+}
+.quick ul li:last-child {background:none}
+.quick ul li a{
+	font-size:18px;
+	color:#fff;
+	text-align:center;
+	display:block;
+	height:180px;
+	padding-top:118px;
+	box-sizing:border-box;
+	position:relative;
+}
+.quick ul li:hover{
+	background:url('/visitgoyang/images/2020/main/quick_over.png') no-repeat;
+}
+.quick ul li:nth-child(1) a{background:url('/visitgoyang/images/2020/main/quick_01.png') center 40px no-repeat;}
+.quick ul li:nth-child(2) a{background:url('/visitgoyang/images/2020/main/quick_02.png') center 36px no-repeat;}
+.quick ul li:nth-child(3) a{background:url('/visitgoyang/images/2020/main/quick_03.png') center 40px no-repeat;}
+.quick ul li:nth-child(4) a{background:url('/visitgoyang/images/2020/main/quick_04.png') center 44px no-repeat;}
+.quick ul li:nth-child(5) a{background:url('/visitgoyang/images/2020/main/quick_05.png') center 40px no-repeat;}
+
+.notice {
+	float:left;
+	width:420px;
+	height:180px;
+	margin:30px 0;
+	position:relative
+}
+.notice h3{
+	color:#333333;
+	font-weight:bold;
+	font-size:20px;
+	border-bottom:#7a7a7a solid 1px;
+	padding-bottom:10px;
+}
+
+.notice ul {padding:15px 0 0 0}
+.notice ul > li {
+	background: url('/visitgoyang/images/2020/main/dot.png') no-repeat 0 center;
+	padding:5px 0 5px 10px
+}
+.notice ul > li:after {display: block; clear: both; content: ''}
+.notice ul > li a {
+    float: left;
+    display:block;
+	font-size:14px;
+    max-width:80%;
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;-moz-binding:url('ellipsis.xml#ellipsis');-o-text-overflow:ellipsis;
+}
+.notice ul > li:hover {background: url('/visitgoyang/images/2020/main/dot_on.png') no-repeat 0 center;}
+.notice ul > li:hover span.date{color:#2856b6}
+.notice ul > li a:hover{color:#2856b6}
+.notice ul > li span.date {
+    float:right;
+    color:#908f8f;
+	font-size:14px;
+}
+.notice .more{
+	position:absolute;
+	right:0;
+	top:0;
+}
+.speaker {
+	float:right;
+	width:710px;
+	margin:30px 0;
+}
+.mainBannerWrap {
+	padding:30px 0;
+	border-top:#dddddd solid 1px;
+}
+.mainBanner {
+	position:relative;
+	padding-left:123px;
+	box-sizing:border-box
+}
+.mainBanner .slick-prev{
+	position:absolute;
+	display:block;
+	width:24px;
+	height:22px;
+	background:url('/visitgoyang/images/2020/main/btn_prev3.png') no-repeat;
+	font-size:0;
+	left:-104px;
+	top:5px;
+	cursor:pointer
+}
+.mainBanner .slick-next{
+	position:absolute;
+	display:block;
+	width:23px;
+	height:22px;
+	background:url('/visitgoyang/images/2020/main/btn_next3.png') no-repeat;
+	font-size:0;
+	left:-80px;
+	top:5px;
+	cursor:pointer
+}
+.mainBanner .control{
+	position:absolute;
+	left:66px;
+	top:5px
+}
+.mainBanner .control .startBtn{display:none}
+/* 서브 페이지 공통 */
+.susTit {
+	border-left:#bbb9ba solid 1px;
+	margin:-40px 0 0 150px;
+	padding-left:10px;
+	height:40px;
+}
+.siteMap {
+	float:left;
+	width:160px;
+	border-top:#6190c8 solid 4px;
+	margin:30px 0 40px 20px;
+}
+.siteMap div a{
+	font-size:18px;
+	color:#00184b;
+	padding:15px 0 15px 20px;
+	border-bottom:#d5d5d5 solid 1px;
+	display:block;
+}
+.siteMap ul{
+	margin-top:15px
+}
+.siteMap ul li a{
+	font-size:13px;
+	padding:4px 0 4px 20px;
+	display:block;
+}
+
+
+.courseArea * {
+	box-sizing:border-box;
+	font-size:14px;
+	color:#333333
+}
+.tabType01 li {
+	display:inline-block;
+	width:260px;
+	border-radius:6px;
+	text-align:center;
+	padding:0 50px;
+	margin-right:16px;
+}
+.tabType01 li a{
+	line-height:64px;
+	color:#fff;
+	display:block;
+	font-size:22px;
+	font-weight:bold;
+	padding-left:40px;
+	background:url('/visitgoyang/images/course/tab_arr.png') right center no-repeat;
+}
+.tabType01 li:nth-child(1) {background:url('/visitgoyang/images/course/tab_01.png') 28px center no-repeat #0f8ffe;}
+.tabType01 li:nth-child(2) {background:url('/visitgoyang/images/course/tab_02.png') 28px center no-repeat #0f8ffe;}
+.tabType01 li:nth-child(3) {background:url('/visitgoyang/images/course/tab_03.png') 28px center no-repeat #0f8ffe;}
+
+.tabType01 li:hover,
+.tabType01 li.on {background-color:#00529c}
+
+.tit {
+	font-size:22px;
+	font-weight:bold;
+	margin:30px 0 20px;
+	background:url('/visitgoyang/images/course/tit_bg.png') no-repeat;
+	padding:10px 0 0 0
+}
+.course_on {
+	color:#0f8ffe;
+	font-size:26px;
+	font-weight:bold;
+	margin:0px 0 5px;
+	background:url('/visitgoyang/images/course/icon_course.png') no-repeat;
+	padding:0 0 0 30px;
+	line-height:29px;
+}
+
+.course_off {
+	color:#000000;
+	font-size:26px;
+	font-weight:bold;
+	margin:0px 0 5px;
+	background:url('/visitgoyang/images/course/icon_course.png') no-repeat;
+	padding:0 0 0 30px;
+	line-height:29px;
+}
+.sumBox {
+	background:url('/visitgoyang/images/course/blt01.png') 20px 18px no-repeat #fafafa;
+	border:#dadada solid 1px;
+	padding:15px 20px 15px 37px;
+	font-size:16px;
+	font-weight:bold;
+	margin-top:15px;
+}
+.courseList {
+	margin-top:50px;
+	background:url('/visitgoyang/images/course/line_bg.png') 24px 0 repeat-y;
+}
+.courseList:after{clear:both;content:'';display:block;}
+.courseList dt{
+	clear:both;
+	float:left;
+	background:url('/visitgoyang/images/course/num_bg.png') no-repeat;
+	color:#00529c;
+	font-size:30px;
+	font-weight:bold;
+	width:80px;
+	height:58px;
+	text-align:center;
+	padding:15px 30px 0 0px;
+}
+.courseList dd:nth-child(2) {padding-top:0}
+.courseList dt.bgno + dd{
+	border-bottom:none;
+	position:relative;
+}
+.courseList dt.bgno + dd:after{
+	position:absolute;
+	left:-80px;
+	top:0;
+	content:'';
+	display:block;
+	width:80px;
+	height:100%;
+	background:#fff;
+}
+.courseList dd {
+	float:left;
+	width:860px;
+	padding:30px 0;
+	border-bottom:#dadada solid 1px;
+}
+.courseList .clear > div {float:left}
+.courseList .imgBox {width:270px}
+.courseList .txtBox {width:calc(100% - 270px);padding-left:20px}
+.courseList.type2 .imgBox {width:290px}
+.courseList.type2 .txtBox {width:calc(100% - 290px)}
+.courseList .txtBox div{
+	font-size:18px;
+	font-weight:bold
+}
+.courseList .txtBox p{
+	font-size:16px;
+	padding-top:15px;
+}
+.courseList + .course {margin-top:45px}
+.boxType01 {
+	background:url('/visitgoyang/images/course/box_bg.png');
+	padding:4px;
+}
+.boxType01 > div{
+	padding:20px;
+	background:#fff;
+}
+.boxType01 > div > div{
+	font-size:16px;
+	font-weight:bold;
+	padding-bottom:10px;
+}
+.boxType01 > div > p{
+	line-height:26px;
+	word-break:keep-all
+}
