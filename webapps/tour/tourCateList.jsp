@@ -31,7 +31,7 @@
 			<c:if test="${cate eq 'C' }">
 			<span>행사</span>
 			</c:if>
-			<c:if test="${grade eq 'D' }">
+			<c:if test="${cate eq 'D' }">
 			<span>축제</span>
 			</c:if>
 			<c:if test="${cate eq 'E' }">
@@ -50,7 +50,7 @@
 	  </ul>
 	</nav>
   <section class="section">
-    <div class="container">
+    <div class="container" style="clear : both; margin-right:420px;">
       <h1 class="title">장소 상세보기</h1>
       	<div id="con">
       		<div class="tile is-ancestor columns" style="padding-bottom:40px;">
@@ -70,7 +70,7 @@
 						<c:if test="${cate eq 'C' }">
 						<span>행사</span>
 						</c:if>
-						<c:if test="${grade eq 'D' }">
+						<c:if test="${cate eq 'D' }">
 						<span>축제</span>
 						</c:if>
 						<c:if test="${cate eq 'E' }">

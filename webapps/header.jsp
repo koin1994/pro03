@@ -4,10 +4,9 @@
 <c:set var="path2" value="${pageContext.request.contextPath }" /> 
 <div id="nav-group">
 	<div class="container"> 
-		<nav class="navbar" role="navigation" aria-label="main navigation"   style="height : 70px;" id="nav" >
-		  <div class="navbar-brand">
+		<nav class="navbar" role="navigation" aria-label="main navigation" id="nav" style="height : 70px;" >
+		   <div class="navbar-brand">
 		    <a class="navbar-item" id="logo" href="<%=request.getContextPath() %>/">
-		    <img src="https://www.goyang.go.kr/visitgoyang/images/2020/common/h1.png" width="180" height="400">
 		    </a>
 		
 		    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -52,11 +51,11 @@
 				    
 				    </div>
 				</div>
-				<div href="${path2 }/GetTourCateListCtrl.do?cate=E" class="navbar-item has-dropdown is-hoverable">
-			    	<a class="navbar-link cate is-arrowless">
+				<div class="navbar-item has-dropdown is-hoverable">
+			    	<a href="${path2 }/GetTourCateListCtrl.do?cate=E" class="navbar-link cate is-arrowless">
 				      	숙박
 				    </a>
-		    		<div class="navbar-dropdown cate" id="cate05">
+				    <div class="navbar-dropdown cate" id="cate05">
 				    
 				    </div>
 				</div>	
@@ -76,7 +75,7 @@
 				    
 				    </div>
 				</div>
-				<div class="navbar-item has-dropdown is-hoverable single">
+				<div class="navbar-item has-dropdown is-hoverable ">
 			    	<a class="navbar-link is-arrowless">
 				      	관광안내
 				    </a>
@@ -84,7 +83,10 @@
 					     <a class="navbar-item" href="<%=request.getContextPath() %>/GetNoticeListCtrl.do">
 					       	공지사항
 					     </a>
-				    </div> 
+				         <a class="navbar-item" href="<%=request.getContextPath() %>/GetReviewListCtrl.do">
+					       	고객리뷰
+					     </a>
+				    </div>  
 				</div>
 				<div class="navbar-item has-dropdown is-hoverable single">
 				    <a class="navbar-link is-arrowless">
@@ -92,17 +94,17 @@
 				    </a>
 				
 				    <div class="navbar-dropdown single">
-				      <a class="navbar-item">
-				        관강안내홍보물신청
+				      <a class="navbar-item" href="https://www.goyang.go.kr/visitgoyang/contents/information/mapRequest.asp?cate_depth2=CD6300&cateCode=CD6320">
+				        관광안내홍보물신청
 				      </a>
-				      <a class="navbar-item">
+				      <a class="navbar-item" href="https://www.goyang.go.kr/visitgoyang/contents/information/explain_guide.asp?cate_depth2=CD6200&cateCode=CD6230">
 				        문화관광해설 안내 및 예약
 				      </a>
-				      <a class="navbar-item">
+				      <a class="navbar-item" href="http://www.goyang.go.kr/ghistory/index.do">
 				        사이버 역사 박물관
 				      </a>
 				      <hr class="navbar-divider">
-				      <a class="navbar-item">
+				      <a class="navbar-item" href="https://goyangcitytour.modoo.at/">
 				        시티투어
 				      </a>
 				    </div>
@@ -124,7 +126,7 @@
 			<c:if test="${not empty sid }">
 			 <div class="buttons">
 			   <a href="${path2 }/UserInfoCtrl.do" class="button is-success">
-			     <strong>회원관리</strong>
+			     <strong>회원정보</strong>
 			   </a>
 			   <a href="${path2 }/UserLogoutCtrl.do" class="button is-danger">
 			     로그아웃

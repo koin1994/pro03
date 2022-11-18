@@ -82,6 +82,14 @@
 .caption-container {
   color: white;
 }
+.mBan ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    margin: 246px -393px 52px;
+    float: left;
+}
 </style>
 	
 </head>
@@ -93,7 +101,7 @@
             <div class="card" >
                 <div class="card-image" >
                     <figure class="image is-16by9 is-covered" style="padding-top : 30.25%">
-                        <img src="https://www.goyang.go.kr/visitgoyang/images/2020/main/visual_03.png" alt="비쥬얼1" />
+                        <img src="https://www.goyang.go.kr/visitgoyang/images/2020/main/visual_03.png" alt="" />
                     </figure>
                 </div>
            </div>
@@ -118,7 +126,7 @@
 			<h1><strong>공지사항</strong></h1>
 			<ul>
 				<li>
-					<a href="/visitgoyang/contents/board/board_view.asp?cate_depth2=CD6300&amp;cateCode=CD6330&amp;bo_seq=324">
+					<a href="http://localhost:8090/pro03/GetNoticeCtrl.do?no=7">
 					2022 고양관광특구 페스티벌 BIG3
 					</a>
 					<!--<img src="./images/2020/main/icon_new.png" alt="새글" />//-->
@@ -126,7 +134,7 @@
 				</li>
 			
 				<li>
-					<a href="/visitgoyang/contents/board/board_view.asp?cate_depth2=CD6300&amp;cateCode=CD6330&amp;bo_seq=304">
+					<a href="http://localhost:8090/pro03/GetNoticeCtrl.do?no=4">
 					2022 고양가을꽃축제 개최안내
 					</a>
 					<!--<img src="./images/2020/main/icon_new.png" alt="새글" />//-->
@@ -134,7 +142,7 @@
 				</li>
 			
 				<li>
-					<a href="/visitgoyang/contents/board/board_view.asp?cate_depth2=CD6300&amp;cateCode=CD6330&amp;bo_seq=284">
+					<a href="http://localhost:8090/pro03/GetNoticeCtrl.do?no=5">
 					2022 고양호수예술축제 개최안내
 					</a>
 					<!--<img src="./images/2020/main/icon_new.png" alt="새글" />//-->
@@ -142,7 +150,7 @@
 				</li>
 			
 				<li>
-					<a href="/visitgoyang/contents/board/board_view.asp?cate_depth2=CD6300&amp;cateCode=CD6330&amp;bo_seq=268">
+					<a href="http://localhost:8090/pro03/GetNoticeCtrl.do?no=6">
 					뮤비 속 고양시를 찾아라! 고양 평화누리길...
 					</a>
 					<!--<img src="./images/2020/main/icon_new.png" alt="새글" />//-->
@@ -150,7 +158,7 @@
 				</li>
 			
 				<li>
-					<a href="/visitgoyang/contents/board/board_view.asp?cate_depth2=CD6300&amp;cateCode=CD6330&amp;bo_seq=267">
+					<a href="http://localhost:8090/pro03/GetNoticeCtrl.do?no=7">
 					한강하구 생태역사평화이야기
 					</a>
 					<!--<img src="./images/2020/main/icon_new.png" alt="새글" />//-->
@@ -163,6 +171,7 @@
 		</div>
 	</div>
 	</div>
+	
     <script>
 	    bulmaCarousel.attach('#slider', {
 	        slidesToScroll: 1,
@@ -192,6 +201,44 @@
 		  }
 		}
     </script>
+    <div class="mBan">
+	<ul>
+		<li><a href="http://www.xn--299au8v81i1iaw91b5jf.com/" target="_blank">
+			<img src="https://www.goyang.go.kr/visitgoyang/images/banner/24.gif" alt="고양아트마켓" />
+				</a>
+		</li>
+		<li><a href="https://dmz.gg.go.kr/gg_dmz-tour/peace/" target="_blank" >
+			<img src=https://www.goyang.go.kr/visitgoyang/images/banner/21.gif alt="평화누리길" />
+			</a>
+		</li>
+		<li><a href="http://ggtour.or.kr/" target="_blank" >
+			<img src="https://www.goyang.go.kr/visitgoyang/images/banner/22.gif" alt="평화누리길 다음카페" />
+			</a>
+		</li>
+		<li><a href="https://www.goyang.go.kr/index.do" target="_blank" >
+			<img src="https://www.goyang.go.kr/visitgoyang/images/banner/1.gif" alt="고양시" />
+			</a>
+		</li>
+		<li><a href="https://goyangcitytour.modoo.at/" target="_blank" >
+			<img src="https://www.goyang.go.kr/visitgoyang/images/banner/14.gif" alt="고양시티투어" />
+			</a>
+		</li>
+		<li><a href="http://agr.goyang.go.kr/" target="_blank" >
+			<img src="	https://www.goyang.go.kr/visitgoyang/images/banner/8.gif" alt="고양시 농업기술센터" />
+			</a>
+		</li>
+		<li><a href="http://its.goyang.go.kr/" target="_blank" >
+			<img src="https://www.goyang.go.kr/visitgoyang/images/banner/9.gif" alt="고양시 교통정보센터" />
+			</a>
+		</li>
+		<li><a href="http://www.hjfestival.or.kr/" target="_blank" >
+			<img src="https://www.goyang.go.kr/visitgoyang/images/banner/11.gif" alt="고양행주문화제" />
+			</a>
+		</li>
+		
+		
+	</ul>
+</div>
 	<jsp:include page="${path1 }/footer.jsp" />
 	
 </body>

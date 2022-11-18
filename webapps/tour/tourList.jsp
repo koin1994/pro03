@@ -23,8 +23,20 @@
 	  </ul>
 	</nav>
   <section class="section">
-    <div class="container">
+    <div class="container" >
       <h1 class="title">장소 목록</h1>
+		<form name="frm1" id="frm1" class="search_form" action="${path1 }/GetPlaceSearchCtrl.do" method="get">
+			<div class="select inline">
+				<select name="sel" id="sel" required>
+					<option value="">선택</option>
+					<option value="place">장소명</option>
+					<option value="comment2">장소설명</option>
+					<option value="place+comment2">장소명+장소설명</option>
+				</select>
+			</div>
+			<input type="text" name="keyword" id="keyword" class="input inline" placeholder="검색어 입력" required>
+			<input type="submit" class="button is-primary inline" value="검색">
+		</form>
 		<table class="table">
 		  <thead>
 		    <tr>
@@ -48,7 +60,7 @@
 				<c:if test="${cate eq 'C' }">
 				<span>행사</span>
 				</c:if>
-				<c:if test="${grade eq 'D' }">
+				<c:if test="${cate eq 'D' }">
 				<span>축제</span>
 				</c:if>
 				<c:if test="${cate eq 'E' }">
