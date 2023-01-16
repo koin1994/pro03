@@ -38,3 +38,4 @@
 * Git 버전관리
 
 ## 프로젝트 설계
+[김태엽_설계서,프로세스.pptx](https://github.com/koin1994/pro03/files/10423033/_.pptx)
