@@ -38,4 +38,7 @@
 * Git 버전관리
 
 ## 프로젝트 설계
-[김태엽_설계서,프로세스.pptx](https://github.com/koin1994/pro03/files/10423033/_.pptx)
+* 화면 설계 프로세스
+![image](https://user-images.githubusercontent.com/112459117/212794870-598c233a-f437-4a26-be3e-80481647db34.png)
+* 프로토타입 시연 동영상
+https://user-images.githubusercontent.com/112459117/212794748-107221a9-9ecd-4ac1-b806-c959357b0234.mp4
