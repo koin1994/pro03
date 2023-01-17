@@ -37,30 +37,36 @@
 * 예외처리
 * Git 버전관리
 
-## 프로젝트 설계
-* 화면 설계 프로세스
-![image](https://user-images.githubusercontent.com/112459117/212794870-598c233a-f437-4a26-be3e-80481647db34.png)
+## 화면 설계 프로세스
+ ![image](https://user-images.githubusercontent.com/112459117/212794870-598c233a-f437-4a26-be3e-80481647db34.png)
 
-* 프로토타입 시연 동영상
-https://user-images.githubusercontent.com/112459117/212794748-107221a9-9ecd-4ac1-b806-c959357b0234.mp4
+## 프로토타입 시연 동영상
+  https://user-images.githubusercontent.com/112459117/212794748-107221a9-9ecd-4ac1-b806-c959357b0234.mp4
 
-* 스토리보드
--메인페이지
+
+## 스토리보드
+* 메인페이지
+
 ![image](https://user-images.githubusercontent.com/112459117/212795116-b1c83415-c174-4473-ada2-166993740a9e.png)
 
--서브페이지
+* 서브페이지
+
 ![image](https://user-images.githubusercontent.com/112459117/212795171-4dc958d0-fbd7-4469-9a5d-233372dfd499.png)
 
--로그인
+* 로그인
+
 ![image](https://user-images.githubusercontent.com/112459117/212795201-99cfff8b-5dc9-4de7-acdc-e4d801aa54ff.png)
 
--회원가입
+* 회원가입
+
 ![image](https://user-images.githubusercontent.com/112459117/212795227-481dc792-63cb-4644-aa11-9a384e47e06a.png)
 
--글쓰기
+* 글쓰기
+
 ![image](https://user-images.githubusercontent.com/112459117/212795260-debddb9e-4030-4357-bbc4-92b17665a1f9.png)
 
--글목록
+* 글목록
+
 ![image](https://user-images.githubusercontent.com/112459117/212795277-9eee2911-69fd-4d3a-96a3-6e9fb5e1533a.png)
 
 
